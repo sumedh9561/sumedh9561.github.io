@@ -792,3 +792,550 @@
   #sam95{
   
   }
+
+  /* _______________________________________________________________________________________________ */
+
+
+  /* #github-stats {
+    padding: 100px 10px;
+} */
+
+.github-stats-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  margin-top: 50px;
+  grid-gap: 40px;
+}
+
+
+.github-stat {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+.github-stat img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+  padding: 10px 30px;
+}
+
+
+.github-st .title::after {
+content: "see my work";
+}
+
+.github-stat:hover img {
+  transform: scale(1.1);
+}
+.mb-0{
+text-align: center;
+margin-bottom: -2%;
+padding-top: 50px;
+justify-content: center;
+}
+
+/*  Stat*/
+
+.heading{
+text-align: center;
+}
+.skills-content-stat {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  gap: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+.skills-box {
+  padding: 20px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+ background-color: #111;
+ color: #fff;
+ border-bottom: 2px solid var(--main-color);
+}
+
+.skills-box:hover {
+  /* background-color: #02225a; */
+ background-color: rgb(2, 166, 70);
+}
+
+.skills-box{
+cursor: pointer;
+/* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+transform: translateX(400%);
+transition: transform 1000ms ease-in-out;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.skills-box:nth-child(even){
+transform: translateX(-400%);
+}
+
+
+.skills-box.show{
+transform : translateX(0);
+}
+
+
+/* responsive media query start */
+
+
+@media (max-width: 1104px) {
+
+.about .about-content .left img {
+  height: 350px;
+  width: 350px;
+}
+}
+
+@media (max-width: 991px) {
+.max-width {
+  padding: 0 50px;
+}
+}
+@media (max-width: 947px) {
+.menu-btn {
+  display: block;
+  z-index: 999;
+  color: #fff;
+  font-size: 23px;
+  cursor: pointer;
+}
+.menu-btn i.active:before {
+  content: "\f00d";
+}
+.navbar .menu {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  left: -100%;
+  top: 0;
+  background: #111;
+  text-align: center;
+  padding-top: 80px;
+  transition: all 0.3s ease;
+}
+.navbar .menu.active {
+  left: 0;
+}
+.navbar .menu li {
+  display: block;
+}
+.navbar .menu li a {
+  display: inline-block;
+  margin: 20px 0;
+  font-size: 25px;
+}
+.max-width {
+  max-width: 930px;
+}
+.about .about-content .column {
+  width: 100%;
+}
+.about .about-content .left {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 60px;
+}
+.about .about-content .right {
+  flex: 100%;
+}
+.services .serv-content .card {
+  width: calc(50% - 10px);
+  margin-bottom: 20px;
+}
+.skills .skills-content .column,
+.contact .contact-content .column {
+  width: 100%;
+  margin-bottom: 25px;
+}
+}
+
+@media (max-width: 690px) {
+.max-width {
+  padding: 0 23px;
+}
+.home .home-content .text-2 {
+  font-size: 60px;
+}
+.home .home-content .text-3 {
+  font-size: 32px;
+}
+.home .home-content a {
+  font-size: 20px;
+}
+.services .serv-content .card {
+  width: 100%;
+}
+
+  .github-stat {
+    width: 300px;
+    font-size: 8px;
+}
+
+.github-stat {
+  width: 100%;
+  font-size: 8px;
+}
+.container{
+text-align: center;
+
+}
+
+.cont-box-1>img{
+width: 45px;
+height: 45px;
+}
+
+.github-stat>img{
+margin: 0 auto;
+width: 100%;
+margin-top: 20px;
+}
+.pro-info>div>img{
+width: 50px;
+height: 50px;
+
+}
+
+.skils-content-1>div{
+margin-top: 20px;
+}
+.skils-content-1>div>img{
+margin: 5px;
+}
+
+.github-stats-list {
+/* display: grid;
+grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+margin-top: 50px;
+grid-gap: 40px; */
+
+display: flex;
+grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+margin-top: 50px;
+grid-gap: 40px;
+}
+
+/* .contact{
+margin-top: -30%;
+} */
+
+.skills-content-stat{
+
+}
+
+}
+
+
+
+@media (max-width: 500px) {
+.home .home-content .text-2 {
+  font-size: 50px;
+}
+.home .home-content .text-3 {
+  font-size: 27px;
+}
+.about .about-content .right .text,
+.skills .skills-content .left .text {
+  font-size: 19px;
+}
+.contact .right form .fields {
+  flex-direction: column;
+}
+.contact .right form .name,
+.contact .right form .email {
+  margin: 0;
+}
+.right form .error-box {
+  width: 150px;
+}
+.scroll-up-btn {
+  right: 15px;
+  bottom: 15px;
+  height: 38px;
+  width: 35px;
+  font-size: 23px;
+  line-height: 38px;
+}
+.project-main{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.github-stat {
+    width: 100%;
+    font-size: 8px;
+}
+.container{
+  text-align: center;
+}
+
+.cont-box-1>img{
+  width: 45px;
+  height: 45px;
+}
+
+.github-stat>img{
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 20px;
+}
+.pro-info>div>img{
+  width: 50px;
+  height: 50px;
+
+}
+
+.skils-content-1>div{
+  margin-top: 20px;
+}
+.skils-content-1>div>img{
+  margin: 5px;
+}
+
+.github-stats-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  margin-top: 50px;
+  grid-gap: 40px;
+}
+.my-cont{
+  margin: 0 auto;
+  width: 100%;
+}
+.my-cont>.cont-box-1{
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 3%;
+  padding: 1.5%;
+  background-color: #000;
+
+}
+.contact{
+  margin-top: -30%;
+}
+
+}
+
+/* __________________________________________________________________ */
+
+
+
+
+
+
+:root {
+  --color-calendar-graph-day-bg: #dddbdb;
+  --color-calendar-graph-day-L1-bg: #39dd34;
+  --color-calendar-graph-day-L2-bg: #45a045;
+  --color-calendar-graph-day-L3-bg: #047526;
+  --color-calendar-graph-day-L4-bg: #0a4208;
+}
+
+rect.ContributionCalendar-day[data-level='0'] {
+  fill: var(--color-calendar-graph-day-bg);
+}
+
+rect.ContributionCalendar-day[data-level='1'] {
+  fill: var(--color-calendar-graph-day-L1-bg);
+}
+
+rect.ContributionCalendar-day[data-level='2'] {
+  fill: var(--color-calendar-graph-day-L2-bg);
+}
+
+rect.ContributionCalendar-day[data-level='3'] {
+  fill: var(--color-calendar-graph-day-L3-bg);
+}
+
+rect.ContributionCalendar-day[data-level='4'] {
+  fill: var(--color-calendar-graph-day-L4-bg);
+}
+
+.calendar .width-full>.float-left {
+  display: none;
+}
+
+.calendar {
+  width: 80%;
+  border: 1px solid #DDDDDD;
+  border-radius: 10px;
+  text-align: center;
+  margin: auto;
+  padding: 1%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.git {
+  background-color: #101010;
+}
+
+.calendar-graph text.wday,
+.calendar-graph text.month {
+  font-size: 10px;
+  fill: rgb(128, 123, 123);
+}
+
+.contrib-legend {
+  text-align: right;
+  padding: 0 14px 10px 0;
+  display: inline-block;
+  float: right;
+}
+
+.contrib-legend .legend {
+  display: inline-block;
+  list-style: none;
+  margin: 0 5px;
+  position: relative;
+  bottom: -1px;
+  padding: 0;
+}
+
+.contrib-legend .legend li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+}
+
+.text-small {
+  font-size: 12px;
+  color: #181717;
+}
+
+.calendar-graph {
+  padding: 5px 0 0;
+  text-align: center;
+}
+
+.contrib-column {
+  padding: 15px 0;
+  text-align: center;
+  border-left: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  font-size: 11px;
+}
+
+.contrib-column-first {
+  border-left: 0;
+}
+
+.table-column {
+  display: table-cell;
+  width: 1%;
+  padding-right: 10px;
+  padding-left: 10px;
+  vertical-align: top;
+}
+
+.contrib-number {
+  font-weight: 300;
+  line-height: 1.3em;
+  font-size: 24px;
+  display: block;
+  color: #b5adad;
+}
+
+.calendar img.spinner {
+  width: 70px;
+  margin-top: 50px;
+  min-height: 70px;
+}
+
+.monospace {
+  text-align: center;
+  color: #000;
+  font-family: monospace;
+}
+
+.monospace a {
+  color: #1D75AB;
+  text-decoration: none;
+}
+
+.contrib-footer {
+  font-size: 11px;
+  padding: 0 10px 12px;
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
+  height: 26px;
+}
+
+.left.text-muted {
+  float: left;
+  margin-left: 9px;
+  color: #2d2c2c;
+}
+
+.left.text-muted a {
+  color: #4078c0;
+  text-decoration: none;
+}
+
+.left.text-muted a:hover,
+.monospace a:hover {
+  text-decoration: underline;
+}
+
+h2.f4.text-normal.mb-3 {
+  display: none;
+}
+
+.float-left.text-gray {
+  float: left;
+}
+
+#user-activity-overview {
+  display: none;
+}
+
+.day-tooltip {
+  white-space: nowrap;
+  position: absolute;
+  z-index: 99999;
+  padding: 10px;
+  font-size: 12px;
+  color: #959da5;
+  text-align: center;
+  background: rgba(0, 0, 0, .85);
+  border-radius: 3px;
+  display: none;
+  pointer-events: none;
+}
+
+.day-tooltip strong {
+  color: #dfe2e5;
+}
+
+.day-tooltip.is-visible {
+  display: block;
+}
+
+.day-tooltip:after {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  box-sizing: border-box;
+  margin: 0 0 0 -5px;
+  content: " ";
+  border: 5px solid transparent;
+  border-top-color: rgba(0, 0, 0, .85)
+}
+
+text.ContributionCalendar-label {
+  fill: #ccc;
+  font-size: 11px;
+}
