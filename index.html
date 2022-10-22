@@ -65,36 +65,8 @@
     </section>
 
     <!-- git hub calender-->
-
-    
-  <script
-src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
-</script>
-<!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
-<link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
-<h2 id="gith" class="section__title">My Github Contribution</h2>
-<!-- Prepare a container for your calendar. -->
-<div class="calendar">
-  <!-- Loading stuff -->
-  Loading the data just for you.
-</div>
-
-<script>
-  GitHubCalendar(".calendar", "sumedh9561");
-
-  // or enable responsive functionality:
-  GitHubCalendar(".calendar", "sumedh9561", { responsive: true });
-
-  // Use a proxy
-  GitHubCalendar(".calendar", "sumedh9561", {
-     proxy (sumedh9561) {
-       return fetch(`https://your-proxy.com/github?user=${sumedh9561}`)
-     }
-  }).then(r => r.text())
-</script>
-
-
-<hr>
+<!-- ________________________________________________________________________________ -->
+  
 
   
 
@@ -236,6 +208,41 @@ src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
             </div>
         </section>
 
+
+    <!-- github all ststus -->
+    <!-- __________________________________________________________________________________________________ -->
+ 
+    <section class="github-st" id="github-">
+        <div id="github-stats">
+            <div class="container">
+                <h1 class="title">Github Stats</h1>
+                <div class="github-stats-list">
+                   
+                    <div class="github-stat">
+                        <img src="https://github-readme-streak-stats.herokuapp.com/?user=sumedh9561&theme=highcontrast"
+                            alt="Github Contributions" />
+                    </div>
+                      
+                    
+                    <div class="github-stat" id="most-lang">
+                            <img src="https://activity-graph.herokuapp.com/graph?username=sumedh9561&bg_color=0D1117&color=5BCDEC&line=5BCDEC&point=FFFFFF&hide_border=true" />
+                    </div>
+                </div>
+            </div>
+            <hr>
+        <h2 class="mb-0">
+            ----- GitHub contribution calendar ----- </h2>
+         <div class="calendar">
+          </div>
+
+        </div>
+    </section>
+
+
+<!-- ______________________________________________________________________________________________________ -->
+
+
+
             <!-- contact section start -->
     <section class="contact" id="contact">
         <div class="max-width">
@@ -307,13 +314,21 @@ src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
         </div>
     </section>
 
- 
+
+
+
 
     <!-- footer section start -->
     <footer>
-        <span class="far fa-copyright"></span> 2022 All rights reserved.</span>
+        <span class="far fa-copyright"></span> All rights reserved Sumedh</span>
     </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
+
+<script src="index.js"></script>
+<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+<script>
+  GitHubCalendar(".calendar", "sumedh9561", { responsive: true });
+</script>
