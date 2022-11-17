@@ -20,15 +20,17 @@
     </div>
     <nav class="navbar">
         <div class="max-width">
-            <div class="logo"><a href="#">Sumedh<span>Ambhore</span></a></div>
+            <div class="logo"><a href="#">
+                <img class="slogo" src="./images/logoimg-.png"/>
+                Sumedh<span class="ambtext">Ambhore</span></a></div>
             <ul class="menu">
-                <li><a href="#home" class="menu-btn">Home</a></li>
-                <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#home" class="menu-btn"><button class="button-85" role="button"><b>Home</b></button></a></li>
+                <li><a href="#about" class="menu-btn"><button class="button-85" role="button"><b>About</b></button></a></li>
                 <!-- <li><a href="#services" class="menu-btn">Services</a></li> -->
-                <li><a href="#skills" class="menu-btn">Skills</a></li>
-                <li><a href="#project" class="menu-btn">Projects</a></li>
-                <li><a href="#contact" class="menu-btn">Contact</a></li>
-                <li><a href="https://drive.google.com/file/d/1RbPJ0oqg2krB3Jk7ghj1KLFN89eBrdeP/view?usp=sharing" class="menu-btn">Resume</a></li>
+                <li><a href="#skills" class="menu-btn"><button class="button-85" role="button"><b>Skills</b></button></a></li>
+                <li><a href="#project" class="menu-btn"><button class="button-85" role="button"><b>Projects</b></button></a></li>
+                <li><a href="#contact" class="menu-btn"><button class="button-85" role="button"><b>Contact</b></button></a></li>
+                <li><a href="https://drive.google.com/file/d/1RbPJ0oqg2krB3Jk7ghj1KLFN89eBrdeP/view?usp=sharing" class="menu-btn"><button class="button-85" role="button"><b>Resume</b></button></a></li>
 
             </ul>
             <div class="menu-btn">
@@ -41,9 +43,9 @@
     <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
-                <div class="text-1">Hello, my name is</div>
-                <div class="text-2">Sumedh Ambhore</div>
-                <div class="text-3">And I'm a <span class="typing"></span></div>
+                <!-- <div class="text-1">Hello, my name is</div> -->
+                <div class="text-2"><i>Sumedh <span class="lastname">Ambhore</span></i></div>
+                <div class="text-3">I'm a <span >Java Backend Developer</span></div>
                 <a href="https://drive.google.com/file/d/1RbPJ0oqg2krB3Jk7ghj1KLFN89eBrdeP/view?usp=sharing">Resume</a>
             </div>
         </div>
@@ -52,13 +54,16 @@
     <!-- about section start -->
     <section class="about" id="about">
         <div class="max-width">
-            <h2 class="title">About me</h2>
+            <h2 class="title"><button class="glow-on-hover" type="button">About Me</button></h2>
             <div class="about-content">
-                <div class="column left">
-                    <img src="images/sumedh.png" alt="">
+              <center>  <div class="column left imageleft">
+                    <img id="sumedhimg" src="images/sumedh.png" alt=""
+                    
+                    >
+                
                 </div>
                 <div class="column right">
-                    <div class="text">I'm Sumedh Ambhore and I'm a <span class="typing-2"></span></div>
+                    <div class="text">I'm Sumedh Ambhore and I'm a <span class="typing-2" style="color:violet"> Backend Developer</span></div>
                     <p>A passionate JAVA Back-End Developer, Dedicated to developing robust applications that interact with the Backend part of web applications. Extensive expertise in website architecture, design, and web design, and web API designs. Problem-solving mindset with a goal to optimize my application for better stability and speed. Love to work in a team.</p>
                     <!-- <a href="#">Download CV</a> -->
                 </div>
@@ -75,27 +80,29 @@
         <!-- services section start -->
         <section class="services" id="services">
             <div class="max-width">
-                <h2 class="title">My services</h2>
+                <div class="title"><button class="glow-on-hover" type="button">My Services</button></div>
                 <div class="serv-content">
                     <div class="card">
                         <div class="box">
-                            <i class="fas fa-paint-brush"></i>
+                           <center><i class="fas fa-paint-brush"></i>
                             <div class="text">Web Design</div>
-                            <p>Proficient in providing web designs.</p>
+                            <p>Proficient in providing web designs.</p></center> 
                         </div>
                     </div>
                     <div class="card">
                         <div class="box">
+                           <center>
+
                             <i class="fas fa-chart-line"></i>
                             <div class="text">REST API</div>
-                            <p>Providing exceptional Rest API's.</p>
+                            <p>Providing exceptional Rest API's.</p></center>
                         </div>
                     </div>
                     <div class="card">
                         <div class="box">
-                            <i class="fas fa-code"></i>
+                        <center>   <i class="fas fa-code"></i>
                             <div class="text">System Design</div>
-                            <p>Proficient in Low Level System Designs</p>
+                            <p>Proficient in Low Level System Designs</p></center>
                         </div>
                     </div>
                    </div>
@@ -104,49 +111,61 @@
         </section>
     
         <!-- skills section start -->
-        <section class="skills" id="skills">
+        <section class="skills" id="skills"> 
             <div class="max-width">
-                <h2 class="title">My skills</h2>
-                <div class="skills-content">
-                    <div class="column left">
-    
-                        <div class="skills-images">
-                            <img src="./images/java.svg" alt="">
+                <h2 class="title"><span><button class="glow-on-hover" type="button">My Skills</button> </span></h2>
+                <div class="skills-content sc">
+                    <div class="card">
+                        <div class="sbox html">
+                           <img class="simg ihtml" src="./images/java.svg" alt="java">
+                            <div class="text">JAVA</div>
                         </div>
-    
-                        <div class="skills-images">
-                            <img src="./images/hibernatesvg.svg" alt="">
-                        </div>
-    
-                        
-                        <div class="skills-images">
-                            <img src="./images/mysql.svg" alt="">
-                        </div>
-    
-                        
-                        <div class="skills-images">
-                            <img src="./images/github.svg" alt="">
-                        </div>
-    
                     </div>
-                    <div class="column right">
-                        <div class="skills-images">
-                            <img src="./images/spring.svg" alt="">
+                    <div class="card">
+                        <div class="sbox css">
+                           <img class="simg icss" src="./images/aws.svg" alt="aws">
+                            <div class="text">AWS</div>
                         </div>
-    
-                        <div class="skills-images">
-                            <img src="./images/aws.svg" alt="">
-                        </div>
-    
-                        <div class="skills-images">
-                            <img src="./images/html.svg" alt="">
-                        </div>
-    
-                        <div class="skills-images">
-                            <img src="./images/javascript.svg" alt="">
-                        </div>
-    
                     </div>
+                    <div class="card">
+                        <div class="sbox js">
+                           <img class="simg ijs" src="./images/hibernatesvg.svg" alt="hn">
+                            <div class="text">HIBERNATE</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="sbox react">
+                           <img class="simg ireact" src="./images/spring.svg" alt="SPRING">
+                            <div class="text">SPRING</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="sbox rdx">
+                           <img class="simg irdx" src="./images/mysql.svg" alt="MySQL">
+                            <div class="text"> MySQL</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="sbox ">
+                           <img class="simg idsa" src="./images/github.svg" alt="gb">
+                            <div class="text">Github</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="sbox chkr">
+                           <img class="simg ichkr" src="./images/html.svg" alt="html">
+                            <div class="text">HTML</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="sbox bs">
+                           <img class="simg ibs" src="./images/javascript.svg" alt="js">
+                            <div class="text">JAVASCRIPT</div>
+                        </div>
+                    </div>
+                  
+                   
+                   </div>
                 </div>
             </div>
         </section>
@@ -154,59 +173,109 @@
     
         <section class="project" id="project">
             <div class="max-width">
-                <h2 class="title">Projects</h2>
-                <div class="carousel owl-carousel">
-                    <div class="card">
-                        <div class="box">
-                            <img src="https://images.bewakoof.com/t1080/women-s-black-love-has-no-gender-graphic-printed-t-shirt-507396-1656058811-1.jpg" alt="">
-                            <div class="text">Bewakoof.com</div>
-                            <p>Inspired by Bewakoof.com, I tried to create a Clone of it with the all the functionalities of the original One..</p>
-                            <p class="techStack">Tech Used: Html, CSS, JavaScript</p>
-                            <div class="repo-links">
-                                <div class="repo-div">
-                                    <span>  <a href="https://github.com/yogeshsaini21/bewakoof.com" target="_blank"> Git Repo </a></span>
+                <h2 class="title"><button class="glow-on-hover" type="button">My Projects</button></h2>
+               
+                
+                <div class="projectSection " >
+                    <center>
+
+                    <!-- project 1 -->
+                    <div class="prjCard"  >
+                    <div class="innerleft innerdiv"
+                      
+                        >
+                    
+                    <img src="https://images.bewakoof.com/t1080/women-s-black-love-has-no-gender-graphic-printed-t-shirt-507396-1656058811-1.jpg" alt="bewakoof"></div>
+                        <div class="innerdiv2 innerdiv">
+                            <center><button class="glow-on-hover ptitle" type="button" style="border:1px solid violet"><b style="font-size: 15px;">bewakoof Clone</b></button></center>
+                            <div>Inspired by Bewakoof.com, I tried to create a Clone of it with the all the functionalities of the original One..</div>
+                            <center>
+                            <div class="ptechstacks">
+                                    <div>html</div>
+                                    <div>CSS</div>
+                                    <div>javascript</div>
+                                    <div>Git</div>
+                                    <!-- <div>html</div> -->
                                 </div>
-                                <div class="demo-div">
-                                    <span> <a href="https://illustrious-rolypoly-40af8b.netlify.app/" target="_blank">  Live Site  </a></span>
-                                </div>
+                            </center> 
+                            
+                            <div style="display: flex; justify-content: space-around;gap: 1rem;">
+                                <button class="button-85" role="button"><a style="color: white;" href="https://illustrious-rolypoly-40af8b.netlify.app/"><b>Live</b></a></button>
+                                <button class="button-85" role="button"><a href="https://github.com/yogeshsaini21/bewakoof.com"></a><b>Github</b></button>
                             </div>
+                        
                         </div>
+                       
+
                     </div>
-                    <div class="card">
-                        <div class="box">
-                            <img src="https://securecdn.pymnts.com/wp-content/uploads/2021/11/best-buy-1-1000x600.jpg" alt="">
-                            <div class="text">Bestbuy.com</div>
-                            <p>We had to make a replica of the Bestbuy.com.Best Buy Co. Inc. is an American multinational consumer electronics retailer headquartered in Richfield, Minnesota. Originally founded by Richard M. </p>
-                            <p class="techStack">Tech Used: Html, CSS, JavaScript</p>
-                            <div class="repo-links">
-                                <div class="repo-div">
-                                    <span>  <a href="https://github.com/Momin-Mohammad/bestbuy-clone" target="_blank"> Git Repo </a></span>
+                </center>
+                    <center>
+
+                    <!-- project 2 -->
+                    <div class="prjCard"  >
+                    <div class="innerleft innerdiv"
+                      
+                        >
+                    
+                    <img src="https://securecdn.pymnts.com/wp-content/uploads/2021/11/best-buy-1-1000x600.jpg" alt="Bestbuy"></div>
+                        <div class="innerdiv2 innerdiv">
+                            <center><button class="glow-on-hover ptitle" type="button" style="border:1px solid violet"><b style="font-size: 15px;">Bestbuy.com</b></button></center>
+                            <div>We had to make a replica of the Bestbuy.com.Best Buy Co. Inc. is an American multinational consumer electronics retailer headquartered in Richfield, Minnesota. Originally founded by Richard M.</div>
+                            <center>
+                            <div class="ptechstacks">
+                                <div>html</div>
+                                <div>CSS</div>
+                                <div>javascript</div>
+                                <div>Git</div>
                                 </div>
-                                <div class="demo-div">
-                                    <span> <a href="https://spectacular-gecko-bb7b9f.netlify.app/" target="_blank">  Live Site  </a></span>
-                                </div>
+                            </center> 
+                            
+                            <div style="display: flex; justify-content: space-around;gap: 1rem;">
+                                <button class="button-85" role="button"> <a  style="color: white;" href="https://spectacular-gecko-bb7b9f.netlify.app/" target="_blank"><b>Live</b></a></button>
+                                <button class="button-85" role="button">  <a style="color: white;" href="https://github.com/Momin-Mohammad/bestbuy-clone" target="_blank"><b>GitHub</b></button>
                             </div>
+                        
                         </div>
+                       
+
                     </div>
-                    <div class="card">
-                        <div class="box">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSojOz5vHeKT8v3S3xNlSyVPpfqsLt-ZC0eeg&usqp=CAU" alt="">
-                            <div class="text">Kindmeal.com</div>
-                            <p>KindMeal.my is Malaysia's leading meat-free lifestyle platform, indulging you with delicious discounted vegetarian meals at cozy environments. We aim to encourage people in reducing meat consumption, saving precious animal lives, health, environment and money with tasty meals.</p>
-                            <p class="techStack">Tech Used: Html, CSS, JavaScript</p>
-                            <div class="repo-links">
-                                <div class="repo-div">
-                                    <span>  <a href="https://github.com/akshaykadu24/kindmeal.my_clone" target="_blank"> Git Repo </a></span>
+                </center>
+                    <center>
+             <!-- project 3 -->
+                    <div class="prjCard"  >
+                    <div class="innerleft innerdiv"
+                      
+                        >
+                    
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSojOz5vHeKT8v3S3xNlSyVPpfqsLt-ZC0eeg&usqp=CAU" alt="Kindmeal"></div>
+                        <div class="innerdiv2 innerdiv">
+                            <center><button class="glow-on-hover ptitle" type="button" style="border:1px solid violet"><b style="font-size: 15px;">Kindmeal.com</b></button></center>
+                            <div>KindMeal.my is Malaysia's leading meat-free lifestyle platform, indulging you with delicious discounted vegetarian meals at cozy environments. We aim to encourage people in reducing meat consumption, saving precious animal lives, health, environment and money with tasty meals.</div>
+                            <center>
+                            <div class="ptechstacks" style="text-align: center">
+                                <div>html</div>
+                                <div>CSS</div>
+                                <div>javascript</div>
+                                <div>Git</div>
                                 </div>
-                                <div class="demo-div">
-                                    <span> <a href="https://ornate-pavlova-caf275.netlify.app/" target="_blank">  Live Site  </a></span>
-                                </div>
+                            </center> 
+                            
+                            <div style="display: flex; justify-content: space-around;gap: 1rem;">
+                                <button class="button-85" role="button"> <a style="color: white;" href="https://ornate-pavlova-caf275.netlify.app/" target="_blank"><b>Live</b></a></button>
+                                <button class="button-85" role="button">  <a style="color: white;" href="https://github.com/akshaykadu24/kindmeal.my_clone" target="_blank"> <b>GitHub</b> </a></button>
                             </div>
+                        
                         </div>
+                       
+
                     </div>
-                   
-                 
-                           </div>
+                </center>
+                  
+                </div>
+           
+          
+
+                </div>
             </div>
         </section>
 
@@ -214,24 +283,24 @@
     <!-- github all ststus -->
     <!-- __________________________________________________________________________________________________ -->
  
-    <section class="github-st" id="github-">
+    <section class="github-st" id="github">
         <div id="github-stats">
             <div class="container">
-                <h1 class="title">Github Stats</h1>
+                <h1 class="title"><button class="glow-on-hover" type="button">Github Stats</button></h1>
                 <div class="github-stats-list">
                    
                     <div class="github-stat">
-                        <img src="https://github-readme-streak-stats.herokuapp.com/?user=sumedh9561&theme=highcontrast"
+                        <img style="height: 250px;" src="https://github-readme-streak-stats.herokuapp.com/?user=sumedh9561&theme=highcontrast"
                             alt="Github Contributions" />
                     </div>
                       
                     
-                    <div class="github-stat" id="most-lang">
+                    <!-- <div class="github-stat" id="most-lang">
                             <img src="https://activity-graph.herokuapp.com/graph?username=sumedh9561&bg_color=0D1117&color=5BCDEC&line=5BCDEC&point=FFFFFF&hide_border=true" />
-                    </div>
+                    </div> -->
                 </div>
             </div>
-            <hr>
+            <!-- <hr> -->
         <h2 class="mb-0">
             ----- GitHub contribution calendar ----- </h2>
          <div class="calendar">
@@ -248,70 +317,64 @@
             <!-- contact section start -->
     <section class="contact" id="contact">
         <div class="max-width">
-            <h2 class="title">Contact me</h2>
+            <h2 class="title"><button class="glow-on-hover" type="button">Contact Me</button></h2>
             <div class="contact-content">
-                <div class="column left">
-                    <div class="text">Get in Touch</div>
-                    <p>Got a project? Reach out and let's work together on something exciting. Big or small. Mobile or web.</p>
-                    <div class="icons">
-                        <div class="row">
-                            <a href=" mailto:ambhoresumedh992@.com">   <i class="fas fa-envelope"></i> </a>
-                            <div class="info">
-                                <div class="head"></div>
-                                <div class="sub-title">  <a href="mailto:ambhoresumedh992@gmail.com"> ambhoresumedh992@gmail.com </a> </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                             <a href="https://www.linkedin.com/in/sumedh-ambhore-0470b6216/" target="_blank"> <i class="fab fa-linkedin"></i> </a>
-                            <div class="info">
-                                <!-- <div class="head">Address</div> -->
-                                <div class="sub-title">  <a href="https://www.linkedin.com/in/sumedh-ambhore-0470b6216/" target="_blank">Linkedin</a> </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                             <a href="https://github.com/sumedh9561" target="_blank"> <i class="fab fa-github"></i> </a>
-                            <div class="info">
-                                <!-- <div class="head">Email</div> -->
-                                <div class="sub-title"> <a href="https://github.com/sumedh9561" target="_blank" >GitHub</a> </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <i class="fas fa-phone-alt"></i>
-                           <div class="info">
-                               <!-- <div class="head">Email</div> -->
-                               <div class="sub-title"> +91 9561208956</div>
-                           </div>
-                       </div>
-
-                        
-
-                    </div>
-                </div>
                
 
                 <div class="column right">
-                    <div class="text">Message me</div>
+                  <center>  <div class="text" >Message me</div></center>
                     <form target="_blank" action="https://formsubmit.co/ambhoresumedh992@gmail.com" method="POST">
                       <div class="fields">
                         <div class="field name">
-                          <input type="text" name="name" placeholder="Name" id="name" required>
+                          <input style="background-color: transparent " type="text" name="name" placeholder="Name" id="name" required>
                         </div>
                         <div class="field email">
-                          <input type="email" id="email" name="email" placeholder="Email" required>
+                          <input style="background-color: transparent " type="email" id="email" name="email" placeholder="Email" required>
                         </div>
                       </div>
                       <div class="field">
-                        <input type="text" name="subject" id="sub" placeholder="subject" required>
+                        <input style="background-color: transparent " type="text" name="subject" id="sub" placeholder="subject" required>
                       </div>
                       <div class="field textarea">
-                        <textarea cols="30" rows="10" id="text" name="message" placeholder="Message.." required></textarea>
+                        <textarea style="background-color: transparent " cols="30" rows="10" id="text" name="message" placeholder="Message.." required></textarea>
                       </div>
+                  
                       <div class="button-area">
-                        <button type="submit" id="submit">Send message</button>
-                      </div>
+                
+                        <button style="width: 200px;" class="button-85" 
+                        type="submit" role="button" id="submit">Send message</button>
+                       </div>
                     </form>
                   </div>
+                  <center>
+
+                  <div class="ContactStructure">
+                    <div class="address details" >
+                        <a class="a" href="https://www.linkedin.com/in/sumedh-ambhore-0470b6216/" target="_blank"> <i class="fab fa-linkedin icons"></i> </a>
+                        <div class="text-one">Sumedh Ambhore</div>
+                       
+                      </div>
+                      <div class="address details" >
+                        <a class="a" href="https://github.com/sumedh9561" target="_blank"> <i class="fab fa-github icons"></i> </a>
+                        <div class="text-one">sumedh</div>
+                       
+                      </div>
+                      <div class="phone details">
+                        <i class="fas fa-phone-alt icons"></i>
+                        
+                        <div class="text-one">+91 9561208956</div>
+                      
+                      </div>
+                      <div class="email details">
+                        <i class="fas fa-envelope icons"></i>
+                       
+                        <div class="text-one">ambhoresumedh992@gmail.com</div>
+                        
+                      </div>
+
+                  </div>
+                </center>
+
             </div>
         </div>
     </section>
